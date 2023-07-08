@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Restaurant
 {
-    public partial class Form1 : Form
+    public partial class mu : Form
     {
-        public Form1()
+        public mu()
         {
             InitializeComponent();
         }
