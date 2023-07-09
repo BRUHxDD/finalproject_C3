@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace Restaurant.Model
 {
-    public partial class frmSupplierAdd : Form
+    public partial class frmBahanBakuAdd : Form
     {
-        public frmSupplierAdd()
+        public frmBahanBakuAdd()
         {
             InitializeComponent();
         }
 
-        private void frmSupplierAdd_Load(object sender, EventArgs e)
+        private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
         }

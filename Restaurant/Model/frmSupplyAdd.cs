@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Restaurant.Model
 {
-    public partial class frmSupplierAdd : Form
+    public partial class frmSupplyAdd : Form
     {
-        public frmSupplierAdd()
+        public frmSupplyAdd()
         {
             InitializeComponent();
-        }
-
-        private void frmSupplierAdd_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

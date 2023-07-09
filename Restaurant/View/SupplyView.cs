@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Restaurant.Model
+namespace Restaurant.View
 {
-    public partial class frmSupplierAdd : Form
+    public partial class SupplyView : Form
     {
-        public frmSupplierAdd()
+        public SupplyView()
         {
             InitializeComponent();
-        }
-
-        private void frmSupplierAdd_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
