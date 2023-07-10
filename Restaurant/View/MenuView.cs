@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Restaurant.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,18 @@ namespace Restaurant.View
         public MenuView()
         {
             InitializeComponent();
+        }
+
+        private void btnService_Click(object sender, EventArgs e)
+        {
+            frmServiceAdd sr = new frmServiceAdd();
+            sr.Show();
+        }
+
+        private void btnOrder_Click(object sender, EventArgs e)
+        {
+            frmOrderAdd or = new frmOrderAdd();
+            or.Show();
         }
     }
 }

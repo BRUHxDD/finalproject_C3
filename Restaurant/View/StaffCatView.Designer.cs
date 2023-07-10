@@ -51,6 +51,7 @@
             this.btnstaff.TabIndex = 15;
             this.btnstaff.Text = "Staff";
             this.btnstaff.UseVisualStyleBackColor = false;
+            this.btnstaff.Click += new System.EventHandler(this.btnstaff_Click);
             // 
             // label1
             // 
@@ -58,7 +59,7 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(74)))), ((int)(((byte)(57)))));
             this.label1.Font = new System.Drawing.Font("Century751 No2 BT", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(111)))));
-            this.label1.Location = new System.Drawing.Point(81, 229);
+            this.label1.Location = new System.Drawing.Point(69, 191);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 20);
             this.label1.TabIndex = 19;
@@ -70,7 +71,7 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(74)))), ((int)(((byte)(57)))));
             this.label2.Font = new System.Drawing.Font("Century751 No2 BT", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(111)))));
-            this.label2.Location = new System.Drawing.Point(310, 229);
+            this.label2.Location = new System.Drawing.Point(233, 191);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 20);
             this.label2.TabIndex = 21;
@@ -82,7 +83,7 @@
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(74)))), ((int)(((byte)(57)))));
             this.label3.Font = new System.Drawing.Font("Century751 No2 BT", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(111)))));
-            this.label3.Location = new System.Drawing.Point(545, 229);
+            this.label3.Location = new System.Drawing.Point(396, 191);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(69, 20);
             this.label3.TabIndex = 23;
@@ -93,43 +94,50 @@
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(74)))), ((int)(((byte)(57)))));
             this.button3.BackgroundImage = global::Restaurant.Properties.Resources.clerk;
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button3.Location = new System.Drawing.Point(507, 122);
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.Location = new System.Drawing.Point(358, 84);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(139, 141);
             this.button3.TabIndex = 22;
             this.button3.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(74)))), ((int)(((byte)(57)))));
             this.button2.BackgroundImage = global::Restaurant.Properties.Resources.waiter;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button2.Location = new System.Drawing.Point(268, 122);
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.Location = new System.Drawing.Point(191, 84);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(139, 141);
             this.button2.TabIndex = 20;
             this.button2.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(74)))), ((int)(((byte)(57)))));
             this.button1.BackgroundImage = global::Restaurant.Properties.Resources.chef;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button1.Location = new System.Drawing.Point(34, 122);
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Location = new System.Drawing.Point(22, 84);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(139, 141);
             this.button1.TabIndex = 18;
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // StaffCatView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(224)))), ((int)(((byte)(187)))));
-            this.ClientSize = new System.Drawing.Size(699, 340);
+            this.CancelButton = this.btnstaff;
+            this.ClientSize = new System.Drawing.Size(543, 289);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label2);
@@ -139,6 +147,7 @@
             this.Controls.Add(this.btnstaff);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "StaffCatView";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StaffCatView";
             this.ResumeLayout(false);
             this.PerformLayout();

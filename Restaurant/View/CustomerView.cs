@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Restaurant.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,12 @@ namespace Restaurant.View
         public CustomerView()
         {
             InitializeComponent();
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            frmCustAdd cst = new frmCustAdd();
+            cst.Show();
         }
     }
 }

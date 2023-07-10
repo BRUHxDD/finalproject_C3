@@ -28,15 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnAdd = new System.Windows.Forms.Button();
             this.dgvNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvjmlh = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,6 +37,13 @@
             this.dgvmetode = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvedit = new System.Windows.Forms.DataGridViewImageColumn();
             this.dgvdel = new System.Windows.Forms.DataGridViewImageColumn();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnAdd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -52,14 +52,14 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.AntiqueWhite;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(129)))), ((int)(((byte)(84)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century751 No2 BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(74)))), ((int)(((byte)(57)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(111)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(129)))), ((int)(((byte)(84)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century751 No2 BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(74)))), ((int)(((byte)(57)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(111)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dgvNo,
@@ -77,6 +77,53 @@
             this.dataGridView1.RowTemplate.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(707, 393);
             this.dataGridView1.TabIndex = 22;
+            // 
+            // dgvNo
+            // 
+            this.dgvNo.HeaderText = "No";
+            this.dgvNo.Name = "dgvNo";
+            // 
+            // dgvid
+            // 
+            this.dgvid.HeaderText = "ID Transaction";
+            this.dgvid.Name = "dgvid";
+            // 
+            // dgvjmlh
+            // 
+            this.dgvjmlh.HeaderText = "Jumlah";
+            this.dgvjmlh.Name = "dgvjmlh";
+            // 
+            // dgvtgl
+            // 
+            this.dgvtgl.HeaderText = "Tanggal";
+            this.dgvtgl.Name = "dgvtgl";
+            // 
+            // dgvmetode
+            // 
+            this.dgvmetode.HeaderText = "Metode Pembayaran";
+            this.dgvmetode.Name = "dgvmetode";
+            // 
+            // dgvedit
+            // 
+            this.dgvedit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dgvedit.FillWeight = 50F;
+            this.dgvedit.HeaderText = "";
+            this.dgvedit.Image = global::Restaurant.Properties.Resources.edit;
+            this.dgvedit.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dgvedit.MinimumWidth = 70;
+            this.dgvedit.Name = "dgvedit";
+            this.dgvedit.Width = 70;
+            // 
+            // dgvdel
+            // 
+            this.dgvdel.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dgvdel.FillWeight = 50F;
+            this.dgvdel.HeaderText = "";
+            this.dgvdel.Image = global::Restaurant.Properties.Resources.delete;
+            this.dgvdel.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dgvdel.MinimumWidth = 70;
+            this.dgvdel.Name = "dgvdel";
+            this.dgvdel.Width = 70;
             // 
             // label2
             // 
@@ -145,59 +192,15 @@
             this.btnAdd.BackColor = System.Drawing.Color.White;
             this.btnAdd.BackgroundImage = global::Restaurant.Properties.Resources.add;
             this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAdd.FlatAppearance.BorderSize = 0;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Location = new System.Drawing.Point(25, 44);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(40, 40);
             this.btnAdd.TabIndex = 17;
             this.btnAdd.UseVisualStyleBackColor = false;
-            // 
-            // dgvNo
-            // 
-            this.dgvNo.HeaderText = "No";
-            this.dgvNo.Name = "dgvNo";
-            // 
-            // dgvid
-            // 
-            this.dgvid.HeaderText = "ID Transaction";
-            this.dgvid.Name = "dgvid";
-            // 
-            // dgvjmlh
-            // 
-            this.dgvjmlh.HeaderText = "Jumlah";
-            this.dgvjmlh.Name = "dgvjmlh";
-            // 
-            // dgvtgl
-            // 
-            this.dgvtgl.HeaderText = "Tanggal";
-            this.dgvtgl.Name = "dgvtgl";
-            // 
-            // dgvmetode
-            // 
-            this.dgvmetode.HeaderText = "Metode Pembayaran";
-            this.dgvmetode.Name = "dgvmetode";
-            // 
-            // dgvedit
-            // 
-            this.dgvedit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dgvedit.FillWeight = 50F;
-            this.dgvedit.HeaderText = "";
-            this.dgvedit.Image = global::Restaurant.Properties.Resources.edit;
-            this.dgvedit.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.dgvedit.MinimumWidth = 70;
-            this.dgvedit.Name = "dgvedit";
-            this.dgvedit.Width = 70;
-            // 
-            // dgvdel
-            // 
-            this.dgvdel.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dgvdel.FillWeight = 50F;
-            this.dgvdel.HeaderText = "";
-            this.dgvdel.Image = global::Restaurant.Properties.Resources.delete;
-            this.dgvdel.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.dgvdel.MinimumWidth = 70;
-            this.dgvdel.Name = "dgvdel";
-            this.dgvdel.Width = 70;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // TransactionView
             // 

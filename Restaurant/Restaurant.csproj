@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,34 +47,190 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="LoginPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="LoginPage.Designer.cs">
+      <DependentUpon>LoginPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="AdminPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="AdminPage.Designer.cs">
+      <DependentUpon>AdminPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form3.cs">
+    <Compile Include="CustomerPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="CustomerPage.Designer.cs">
+      <DependentUpon>CustomerPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\frmBahanBakuAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\frmBahanBakuAdd.Designer.cs">
+      <DependentUpon>frmBahanBakuAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\frmCustAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\frmCustAdd.Designer.cs">
+      <DependentUpon>frmCustAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\frmOrderAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\frmOrderAdd.Designer.cs">
+      <DependentUpon>frmOrderAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\frmServiceAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\frmServiceAdd.Designer.cs">
+      <DependentUpon>frmServiceAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\frmStaffCashierAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\frmStaffCashierAdd.Designer.cs">
+      <DependentUpon>frmStaffCashierAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\frmStaffChefAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\frmStaffChefAdd.Designer.cs">
+      <DependentUpon>frmStaffChefAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\frmStaffWaiterAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\frmStaffWaiterAdd.Designer.cs">
+      <DependentUpon>frmStaffWaiterAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\frmSupplierAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\frmSupplierAdd.Designer.cs">
+      <DependentUpon>frmSupplierAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\frmSupplyAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\frmSupplyAdd.Designer.cs">
+      <DependentUpon>frmSupplyAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\frmTransAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\frmTransAdd.Designer.cs">
+      <DependentUpon>frmTransAdd.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="View\BhnBakuView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\BhnBakuView.Designer.cs">
+      <DependentUpon>BhnBakuView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\BillView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\BillView.Designer.cs">
+      <DependentUpon>BillView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CustomerView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CustomerView.Designer.cs">
+      <DependentUpon>CustomerView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DashboardView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DashboardView.Designer.cs">
+      <DependentUpon>DashboardView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MenuView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MenuView.Designer.cs">
+      <DependentUpon>MenuView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ReportView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ReportView.Designer.cs">
+      <DependentUpon>ReportView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\StaffCatView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\StaffCatView.Designer.cs">
+      <DependentUpon>StaffCatView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\StaffView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\StaffView.Designer.cs">
+      <DependentUpon>StaffView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SupplierView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SupplierView.Designer.cs">
+      <DependentUpon>SupplierView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SupplyView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SupplyView.Designer.cs">
+      <DependentUpon>SupplyView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\TransactionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\TransactionView.Designer.cs">
+      <DependentUpon>TransactionView.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="LoginPage.resx">
+      <DependentUpon>LoginPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="AdminPage.resx">
+      <DependentUpon>AdminPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="CustomerPage.resx">
+      <DependentUpon>CustomerPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\frmBahanBakuAdd.resx">
+      <DependentUpon>frmBahanBakuAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\frmCustAdd.resx">
+      <DependentUpon>frmCustAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\frmOrderAdd.resx">
+      <DependentUpon>frmOrderAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\frmServiceAdd.resx">
+      <DependentUpon>frmServiceAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\frmStaffCashierAdd.resx">
+      <DependentUpon>frmStaffCashierAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\frmStaffChefAdd.resx">
+      <DependentUpon>frmStaffChefAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\frmStaffWaiterAdd.resx">
+      <DependentUpon>frmStaffWaiterAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\frmSupplierAdd.resx">
+      <DependentUpon>frmSupplierAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\frmSupplyAdd.resx">
+      <DependentUpon>frmSupplyAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\frmTransAdd.resx">
+      <DependentUpon>frmTransAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -83,7 +240,41 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="View\BhnBakuView.resx">
+      <DependentUpon>BhnBakuView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\BillView.resx">
+      <DependentUpon>BillView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CustomerView.resx">
+      <DependentUpon>CustomerView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DashboardView.resx">
+      <DependentUpon>DashboardView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MenuView.resx">
+      <DependentUpon>MenuView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ReportView.resx">
+      <DependentUpon>ReportView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\StaffCatView.resx">
+      <DependentUpon>StaffCatView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\StaffView.resx">
+      <DependentUpon>StaffView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SupplierView.resx">
+      <DependentUpon>SupplierView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SupplyView.resx">
+      <DependentUpon>SupplyView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\TransactionView.resx">
+      <DependentUpon>TransactionView.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -96,6 +287,126 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restaurant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wholesale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\staff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\staff1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wholesale1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food-service.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food-service1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mobile-banking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chef.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\waiter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clerk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spaghetti.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spaguetti.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\steak.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\turkey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cheesecake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cheese-burger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pizza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\milk-shake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cocktail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\service.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

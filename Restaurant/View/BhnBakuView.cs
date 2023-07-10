@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Restaurant.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,5 +17,24 @@ namespace Restaurant.View
         {
             InitializeComponent();
         }
+
+        private void btnbhn_Click(object sender, EventArgs e)
+        {
+            this.Show();
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            frmBahanBakuAdd bhn = new frmBahanBakuAdd();
+            bhn.Show();
+        }
+
+        private void btnSply_Click(object sender, EventArgs e)
+        {
+            SupplyView spl = new SupplyView();
+            spl.Show();
+        }
+
+       
     }
 }

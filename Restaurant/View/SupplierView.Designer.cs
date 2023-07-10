@@ -37,14 +37,14 @@
             this.dgvid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvedit = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dgvdel = new System.Windows.Forms.DataGridViewImageColumn();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dgvedit = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dgvdel = new System.Windows.Forms.DataGridViewImageColumn();
             this.btnAdd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -110,19 +110,41 @@
             this.dgvedit,
             this.dgvdel});
             this.dataGridView1.GridColor = System.Drawing.Color.AntiqueWhite;
-            this.dataGridView1.Location = new System.Drawing.Point(33, 102);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 97);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 10;
             this.dataGridView1.RowTemplate.Height = 40;
             this.dataGridView1.RowTemplate.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(753, 392);
+            this.dataGridView1.Size = new System.Drawing.Size(732, 392);
             this.dataGridView1.TabIndex = 11;
+            // 
+            // dgvedit
+            // 
+            this.dgvedit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dgvedit.FillWeight = 50F;
+            this.dgvedit.HeaderText = "";
+            this.dgvedit.Image = global::Restaurant.Properties.Resources.edit;
+            this.dgvedit.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dgvedit.MinimumWidth = 70;
+            this.dgvedit.Name = "dgvedit";
+            this.dgvedit.Width = 70;
+            // 
+            // dgvdel
+            // 
+            this.dgvdel.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dgvdel.FillWeight = 50F;
+            this.dgvdel.HeaderText = "";
+            this.dgvdel.Image = global::Restaurant.Properties.Resources.delete;
+            this.dgvdel.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dgvdel.MinimumWidth = 70;
+            this.dgvdel.Name = "dgvdel";
+            this.dgvdel.Width = 70;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century751 No2 BT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(42, 17);
+            this.label2.Location = new System.Drawing.Point(12, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(134, 22);
             this.label2.TabIndex = 10;
@@ -132,7 +154,7 @@
             // 
             this.textBox1.AccessibleName = "";
             this.textBox1.Font = new System.Drawing.Font("Century751 No2 BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(557, 51);
+            this.textBox1.Location = new System.Drawing.Point(595, 51);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(149, 23);
             this.textBox1.TabIndex = 8;
@@ -141,7 +163,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century751 No2 BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(560, 35);
+            this.label1.Location = new System.Drawing.Point(592, 32);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 16);
             this.label1.TabIndex = 7;
@@ -173,33 +195,11 @@
             // 
             this.pictureBox1.BackgroundImage = global::Restaurant.Properties.Resources.search;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(527, 51);
+            this.pictureBox1.Location = new System.Drawing.Point(563, 51);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(24, 23);
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
-            // 
-            // dgvedit
-            // 
-            this.dgvedit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dgvedit.FillWeight = 50F;
-            this.dgvedit.HeaderText = "";
-            this.dgvedit.Image = global::Restaurant.Properties.Resources.edit;
-            this.dgvedit.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.dgvedit.MinimumWidth = 70;
-            this.dgvedit.Name = "dgvedit";
-            this.dgvedit.Width = 70;
-            // 
-            // dgvdel
-            // 
-            this.dgvdel.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dgvdel.FillWeight = 50F;
-            this.dgvdel.HeaderText = "";
-            this.dgvdel.Image = global::Restaurant.Properties.Resources.delete;
-            this.dgvdel.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.dgvdel.MinimumWidth = 70;
-            this.dgvdel.Name = "dgvdel";
-            this.dgvdel.Width = 70;
             // 
             // btnAdd
             // 
@@ -207,19 +207,22 @@
             this.btnAdd.BackColor = System.Drawing.Color.White;
             this.btnAdd.BackgroundImage = global::Restaurant.Properties.Resources.add;
             this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAdd.FlatAppearance.BorderSize = 0;
-            this.btnAdd.Location = new System.Drawing.Point(46, 51);
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.Location = new System.Drawing.Point(16, 42);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(40, 40);
             this.btnAdd.TabIndex = 6;
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // SupplierView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(224)))), ((int)(((byte)(187)))));
-            this.ClientSize = new System.Drawing.Size(798, 506);
+            this.ClientSize = new System.Drawing.Size(756, 504);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label2);

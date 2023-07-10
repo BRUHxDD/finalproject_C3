@@ -16,5 +16,16 @@ namespace Restaurant.View
         {
             InitializeComponent();
         }
+
+        public void GetData()
+        {
+           
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            StaffCatView scat = new StaffCatView();
+            scat.Show();
+        }
     }
 }
