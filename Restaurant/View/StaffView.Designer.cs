@@ -28,159 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dgvNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvid = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvkodebahan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvidspl = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvalamat1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvedit = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dgvdel = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnAdd = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnStaffCashier = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnStafWaiter = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnStaffChef = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // textBox1
-            // 
-            this.textBox1.AccessibleName = "";
-            this.textBox1.Font = new System.Drawing.Font("Century751 No2 BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(595, 76);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(149, 23);
-            this.textBox1.TabIndex = 18;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century751 No2 BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(598, 60);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 16);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "Search";
-            // 
-            // dataGridView1
-            // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century751 No2 BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(5);
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.AntiqueWhite;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dataGridView1.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(129)))), ((int)(((byte)(84)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century751 No2 BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(74)))), ((int)(((byte)(57)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(111)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.dataGridView1.ColumnHeadersHeight = 50;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dgvNo,
-            this.dgvid,
-            this.dgvkodebahan,
-            this.dgvidspl,
-            this.dgvalamat1,
-            this.dgvType,
-            this.dgvedit,
-            this.dgvdel});
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Century751 No2 BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.Padding = new System.Windows.Forms.Padding(5);
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle8;
-            this.dataGridView1.GridColor = System.Drawing.Color.AntiqueWhite;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 113);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 10;
-            this.dataGridView1.RowTemplate.Height = 40;
-            this.dataGridView1.RowTemplate.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(732, 373);
-            this.dataGridView1.TabIndex = 20;
-            // 
-            // dgvNo
-            // 
-            this.dgvNo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Century751 No2 BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle7.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvNo.DefaultCellStyle = dataGridViewCellStyle7;
-            this.dgvNo.HeaderText = "No";
-            this.dgvNo.Name = "dgvNo";
-            this.dgvNo.Width = 61;
-            // 
-            // dgvid
-            // 
-            this.dgvid.HeaderText = "ID Staff";
-            this.dgvid.Name = "dgvid";
-            this.dgvid.Visible = false;
-            // 
-            // dgvkodebahan
-            // 
-            this.dgvkodebahan.HeaderText = "Nama";
-            this.dgvkodebahan.Name = "dgvkodebahan";
-            // 
-            // dgvidspl
-            // 
-            this.dgvidspl.HeaderText = "Jenis Kelamin";
-            this.dgvidspl.Name = "dgvidspl";
-            // 
-            // dgvalamat1
-            // 
-            this.dgvalamat1.HeaderText = "No Telepon";
-            this.dgvalamat1.Name = "dgvalamat1";
-            // 
-            // dgvType
-            // 
-            this.dgvType.HeaderText = "Type";
-            this.dgvType.Name = "dgvType";
-            // 
-            // dgvedit
-            // 
-            this.dgvedit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dgvedit.FillWeight = 50F;
-            this.dgvedit.HeaderText = "";
-            this.dgvedit.Image = global::Restaurant.Properties.Resources.edit;
-            this.dgvedit.MinimumWidth = 70;
-            this.dgvedit.Name = "dgvedit";
-            this.dgvedit.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvedit.Width = 70;
-            // 
-            // dgvdel
-            // 
-            this.dgvdel.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dgvdel.FillWeight = 50F;
-            this.dgvdel.HeaderText = "";
-            this.dgvdel.Image = global::Restaurant.Properties.Resources.delete;
-            this.dgvdel.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.dgvdel.MinimumWidth = 70;
-            this.dgvdel.Name = "dgvdel";
-            this.dgvdel.Width = 70;
             // 
             // dataGridViewImageColumn1
             // 
@@ -204,32 +61,6 @@
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
             this.dataGridViewImageColumn2.Width = 70;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::Restaurant.Properties.Resources.search;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(565, 76);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(24, 23);
-            this.pictureBox1.TabIndex = 19;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.AutoSize = true;
-            this.btnAdd.BackColor = System.Drawing.Color.White;
-            this.btnAdd.BackgroundImage = global::Restaurant.Properties.Resources.add;
-            this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAdd.FlatAppearance.BorderSize = 0;
-            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Location = new System.Drawing.Point(12, 60);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(40, 40);
-            this.btnAdd.TabIndex = 21;
-            this.btnAdd.UseVisualStyleBackColor = false;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -240,44 +71,114 @@
             this.label2.TabIndex = 22;
             this.label2.Text = "Staff List";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(74)))), ((int)(((byte)(57)))));
+            this.label3.Font = new System.Drawing.Font("Century751 No2 BT", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(111)))));
+            this.label3.Location = new System.Drawing.Point(536, 275);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(69, 20);
+            this.label3.TabIndex = 29;
+            this.label3.Text = "Cashier";
+            // 
+            // btnStaffCashier
+            // 
+            this.btnStaffCashier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(74)))), ((int)(((byte)(57)))));
+            this.btnStaffCashier.BackgroundImage = global::Restaurant.Properties.Resources.clerk;
+            this.btnStaffCashier.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnStaffCashier.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnStaffCashier.Location = new System.Drawing.Point(498, 168);
+            this.btnStaffCashier.Name = "btnStaffCashier";
+            this.btnStaffCashier.Size = new System.Drawing.Size(150, 160);
+            this.btnStaffCashier.TabIndex = 28;
+            this.btnStaffCashier.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.btnStaffCashier.UseVisualStyleBackColor = false;
+            this.btnStaffCashier.Click += new System.EventHandler(this.btnStaffCashier_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(74)))), ((int)(((byte)(57)))));
+            this.label1.Font = new System.Drawing.Font("Century751 No2 BT", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(111)))));
+            this.label1.Location = new System.Drawing.Point(328, 275);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(64, 20);
+            this.label1.TabIndex = 27;
+            this.label1.Text = "Waiter";
+            // 
+            // btnStafWaiter
+            // 
+            this.btnStafWaiter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(74)))), ((int)(((byte)(57)))));
+            this.btnStafWaiter.BackgroundImage = global::Restaurant.Properties.Resources.waiter;
+            this.btnStafWaiter.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnStafWaiter.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnStafWaiter.Location = new System.Drawing.Point(286, 168);
+            this.btnStafWaiter.Name = "btnStafWaiter";
+            this.btnStafWaiter.Size = new System.Drawing.Size(150, 160);
+            this.btnStafWaiter.TabIndex = 26;
+            this.btnStafWaiter.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.btnStafWaiter.UseVisualStyleBackColor = false;
+            this.btnStafWaiter.Click += new System.EventHandler(this.btnStafWaiter_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(74)))), ((int)(((byte)(57)))));
+            this.label4.Font = new System.Drawing.Font("Century751 No2 BT", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(111)))));
+            this.label4.Location = new System.Drawing.Point(129, 275);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(44, 20);
+            this.label4.TabIndex = 25;
+            this.label4.Text = "Chef";
+            // 
+            // btnStaffChef
+            // 
+            this.btnStaffChef.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(74)))), ((int)(((byte)(57)))));
+            this.btnStaffChef.BackgroundImage = global::Restaurant.Properties.Resources.chef;
+            this.btnStaffChef.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnStaffChef.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnStaffChef.Location = new System.Drawing.Point(82, 168);
+            this.btnStaffChef.Name = "btnStaffChef";
+            this.btnStaffChef.Size = new System.Drawing.Size(150, 160);
+            this.btnStaffChef.TabIndex = 24;
+            this.btnStaffChef.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.btnStaffChef.UseVisualStyleBackColor = false;
+            this.btnStaffChef.Click += new System.EventHandler(this.btnStaffChef_Click);
+            // 
             // StaffView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(224)))), ((int)(((byte)(187)))));
             this.ClientSize = new System.Drawing.Size(756, 504);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.btnStaffCashier);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnStafWaiter);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.btnStaffChef);
+            this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "StaffView";
             this.Text = "StaffView";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvNo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvid;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvkodebahan;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvidspl;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvalamat1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvType;
-        private System.Windows.Forms.DataGridViewImageColumn dgvedit;
-        private System.Windows.Forms.DataGridViewImageColumn dgvdel;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
-        private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnStaffCashier;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnStafWaiter;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnStaffChef;
     }
 }
