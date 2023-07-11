@@ -65,6 +65,7 @@
     <Compile Include="CustomerPage.Designer.cs">
       <DependentUpon>CustomerPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="MainClass.cs" />
     <Compile Include="Model\frmBahanBakuAdd.cs">
       <SubType>Form</SubType>
     </Compile>
