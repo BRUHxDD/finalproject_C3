@@ -190,5 +190,10 @@ namespace Restaurant
                 MessageBox.Show("Terjadi kesalahan: " + ex.Message);
             }
         }
+
+        private void txtIDSup_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

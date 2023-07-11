@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnUpdate = new System.Windows.Forms.Button();
@@ -36,8 +36,8 @@
             this.btnOpen = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
-            this.txtIDSup = new System.Windows.Forms.TextBox();
-            this.idSup = new System.Windows.Forms.Label();
+            this.txtIDCust = new System.Windows.Forms.TextBox();
+            this.idCust = new System.Windows.Forms.Label();
             this.txtnoTlpnCust = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtnmCust = new System.Windows.Forms.TextBox();
@@ -65,10 +65,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century751 No2 BT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(53, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(147, 22);
+            this.label1.Size = new System.Drawing.Size(143, 24);
             this.label1.TabIndex = 36;
             this.label1.Text = "Add Customer";
             // 
@@ -85,6 +85,7 @@
             this.btnUpdate.TabIndex = 58;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDel
             // 
@@ -99,6 +100,7 @@
             this.btnDel.TabIndex = 57;
             this.btnDel.Text = "Delete";
             this.btnDel.UseVisualStyleBackColor = false;
+            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
             // 
             // btnOpen
             // 
@@ -113,6 +115,7 @@
             this.btnOpen.TabIndex = 56;
             this.btnOpen.Text = "Open";
             this.btnOpen.UseVisualStyleBackColor = false;
+            this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
             // 
             // btnClear
             // 
@@ -127,6 +130,7 @@
             this.btnClear.TabIndex = 55;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnSave
             // 
@@ -141,58 +145,59 @@
             this.btnSave.TabIndex = 54;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // txtIDSup
+            // txtIDCust
             // 
-            this.txtIDSup.Font = new System.Drawing.Font("Century751 No2 BT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIDSup.Location = new System.Drawing.Point(303, 346);
-            this.txtIDSup.Name = "txtIDSup";
-            this.txtIDSup.Size = new System.Drawing.Size(132, 23);
-            this.txtIDSup.TabIndex = 53;
+            this.txtIDCust.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIDCust.Location = new System.Drawing.Point(303, 346);
+            this.txtIDCust.Name = "txtIDCust";
+            this.txtIDCust.Size = new System.Drawing.Size(132, 22);
+            this.txtIDCust.TabIndex = 53;
             // 
-            // idSup
+            // idCust
             // 
-            this.idSup.AutoSize = true;
-            this.idSup.Font = new System.Drawing.Font("Century751 No2 BT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.idSup.Location = new System.Drawing.Point(189, 346);
-            this.idSup.Name = "idSup";
-            this.idSup.Size = new System.Drawing.Size(82, 16);
-            this.idSup.TabIndex = 52;
-            this.idSup.Text = "ID Supplier";
+            this.idCust.AutoSize = true;
+            this.idCust.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.idCust.Location = new System.Drawing.Point(189, 346);
+            this.idCust.Name = "idCust";
+            this.idCust.Size = new System.Drawing.Size(91, 16);
+            this.idCust.TabIndex = 52;
+            this.idCust.Text = "ID Customer";
             // 
             // txtnoTlpnCust
             // 
-            this.txtnoTlpnCust.Font = new System.Drawing.Font("Century751 No2 BT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtnoTlpnCust.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtnoTlpnCust.Location = new System.Drawing.Point(303, 458);
             this.txtnoTlpnCust.Name = "txtnoTlpnCust";
-            this.txtnoTlpnCust.Size = new System.Drawing.Size(132, 23);
+            this.txtnoTlpnCust.Size = new System.Drawing.Size(132, 22);
             this.txtnoTlpnCust.TabIndex = 44;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century751 No2 BT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(189, 458);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 16);
+            this.label3.Size = new System.Drawing.Size(89, 16);
             this.label3.TabIndex = 43;
             this.label3.Text = "No Telepon";
             // 
             // txtnmCust
             // 
-            this.txtnmCust.Font = new System.Drawing.Font("Century751 No2 BT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtnmCust.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtnmCust.Location = new System.Drawing.Point(303, 401);
             this.txtnmCust.Name = "txtnmCust";
-            this.txtnmCust.Size = new System.Drawing.Size(132, 23);
+            this.txtnmCust.Size = new System.Drawing.Size(132, 22);
             this.txtnmCust.TabIndex = 42;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century751 No2 BT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(189, 404);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(47, 16);
+            this.label8.Size = new System.Drawing.Size(48, 16);
             this.label8.TabIndex = 41;
             this.label8.Text = "Nama";
             // 
@@ -210,6 +215,7 @@
             this.btnAdd.Size = new System.Drawing.Size(40, 40);
             this.btnAdd.TabIndex = 38;
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click_1);
             // 
             // dataGridViewImageColumn2
             // 
@@ -240,14 +246,14 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvCustomer.BackgroundColor = System.Drawing.Color.AntiqueWhite;
             this.dgvCustomer.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(129)))), ((int)(((byte)(84)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century751 No2 BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(74)))), ((int)(((byte)(57)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(111)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(129)))), ((int)(((byte)(84)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(74)))), ((int)(((byte)(57)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(111)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCustomer.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dgvCustomer.GridColor = System.Drawing.Color.AntiqueWhite;
@@ -270,8 +276,8 @@
             this.Controls.Add(this.btnOpen);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.txtIDSup);
-            this.Controls.Add(this.idSup);
+            this.Controls.Add(this.txtIDCust);
+            this.Controls.Add(this.idCust);
             this.Controls.Add(this.txtnoTlpnCust);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtnmCust);
@@ -299,8 +305,8 @@
         public System.Windows.Forms.Button btnOpen;
         public System.Windows.Forms.Button btnClear;
         public System.Windows.Forms.Button btnSave;
-        public System.Windows.Forms.TextBox txtIDSup;
-        private System.Windows.Forms.Label idSup;
+        public System.Windows.Forms.TextBox txtIDCust;
+        private System.Windows.Forms.Label idCust;
         public System.Windows.Forms.TextBox txtnoTlpnCust;
         private System.Windows.Forms.Label label3;
         public System.Windows.Forms.TextBox txtnmCust;
