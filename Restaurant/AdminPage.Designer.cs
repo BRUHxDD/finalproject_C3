@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnBack = new System.Windows.Forms.Button();
             this.btnSupplier = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.btnReport = new System.Windows.Forms.Button();
@@ -40,7 +41,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.centerPanel = new System.Windows.Forms.Panel();
-            this.btnBack = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -63,6 +63,20 @@
             this.panel1.Size = new System.Drawing.Size(266, 549);
             this.panel1.TabIndex = 0;
             // 
+            // btnBack
+            // 
+            this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.Font = new System.Drawing.Font("Century751 No2 BT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(111)))));
+            this.btnBack.Location = new System.Drawing.Point(12, 510);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(75, 27);
+            this.btnBack.TabIndex = 5;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // btnSupplier
             // 
             this.btnSupplier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(74)))), ((int)(((byte)(57)))));
@@ -73,7 +87,7 @@
             this.btnSupplier.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(111)))));
             this.btnSupplier.Image = global::Restaurant.Properties.Resources.wholesale1;
             this.btnSupplier.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSupplier.Location = new System.Drawing.Point(89, 198);
+            this.btnSupplier.Location = new System.Drawing.Point(89, 196);
             this.btnSupplier.Name = "btnSupplier";
             this.btnSupplier.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnSupplier.Size = new System.Drawing.Size(177, 47);
@@ -111,7 +125,7 @@
             this.btnReport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(111)))));
             this.btnReport.Image = global::Restaurant.Properties.Resources.report1;
             this.btnReport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReport.Location = new System.Drawing.Point(89, 388);
+            this.btnReport.Location = new System.Drawing.Point(89, 390);
             this.btnReport.Name = "btnReport";
             this.btnReport.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnReport.Size = new System.Drawing.Size(177, 47);
@@ -130,7 +144,7 @@
             this.btnStaff.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(111)))));
             this.btnStaff.Image = global::Restaurant.Properties.Resources.staff1;
             this.btnStaff.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStaff.Location = new System.Drawing.Point(89, 325);
+            this.btnStaff.Location = new System.Drawing.Point(89, 326);
             this.btnStaff.Name = "btnStaff";
             this.btnStaff.Size = new System.Drawing.Size(177, 47);
             this.btnStaff.TabIndex = 1;
@@ -150,7 +164,7 @@
             this.btnIng.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(111)))));
             this.btnIng.Image = global::Restaurant.Properties.Resources.food1;
             this.btnIng.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnIng.Location = new System.Drawing.Point(89, 263);
+            this.btnIng.Location = new System.Drawing.Point(89, 260);
             this.btnIng.Name = "btnIng";
             this.btnIng.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnIng.Size = new System.Drawing.Size(177, 47);
@@ -226,20 +240,6 @@
             this.centerPanel.Name = "centerPanel";
             this.centerPanel.Size = new System.Drawing.Size(756, 504);
             this.centerPanel.TabIndex = 2;
-            // 
-            // btnBack
-            // 
-            this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBack.Font = new System.Drawing.Font("Century751 No2 BT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(111)))));
-            this.btnBack.Location = new System.Drawing.Point(12, 510);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(75, 27);
-            this.btnBack.TabIndex = 5;
-            this.btnBack.Text = "Back";
-            this.btnBack.UseVisualStyleBackColor = true;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // AdminPage
             // 

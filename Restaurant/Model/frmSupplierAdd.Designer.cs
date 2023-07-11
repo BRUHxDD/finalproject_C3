@@ -35,18 +35,18 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.nmSup = new System.Windows.Forms.TextBox();
+            this.noTlpnSup = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.nmJLN = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.Kota = new System.Windows.Forms.TextBox();
+            this.Provinsi = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.idSup = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -81,6 +81,7 @@
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(129)))), ((int)(((byte)(84)))));
+            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.ForeColor = System.Drawing.Color.White;
@@ -90,6 +91,7 @@
             this.btnSave.TabIndex = 0;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // panel1
             // 
@@ -136,21 +138,21 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Nama";
             // 
-            // textBox1
+            // nmSup
             // 
-            this.textBox1.Font = new System.Drawing.Font("Century751 No2 BT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(52, 212);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(132, 23);
-            this.textBox1.TabIndex = 5;
+            this.nmSup.Font = new System.Drawing.Font("Century751 No2 BT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nmSup.Location = new System.Drawing.Point(52, 212);
+            this.nmSup.Name = "nmSup";
+            this.nmSup.Size = new System.Drawing.Size(132, 23);
+            this.nmSup.TabIndex = 5;
             // 
-            // textBox2
+            // noTlpnSup
             // 
-            this.textBox2.Font = new System.Drawing.Font("Century751 No2 BT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(52, 271);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(132, 23);
-            this.textBox2.TabIndex = 7;
+            this.noTlpnSup.Font = new System.Drawing.Font("Century751 No2 BT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.noTlpnSup.Location = new System.Drawing.Point(52, 271);
+            this.noTlpnSup.Name = "noTlpnSup";
+            this.noTlpnSup.Size = new System.Drawing.Size(132, 23);
+            this.noTlpnSup.TabIndex = 7;
             // 
             // label3
             // 
@@ -162,13 +164,13 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "No Telepon";
             // 
-            // textBox3
+            // nmJLN
             // 
-            this.textBox3.Font = new System.Drawing.Font("Century751 No2 BT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(332, 173);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(132, 23);
-            this.textBox3.TabIndex = 9;
+            this.nmJLN.Font = new System.Drawing.Font("Century751 No2 BT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nmJLN.Location = new System.Drawing.Point(332, 173);
+            this.nmJLN.Name = "nmJLN";
+            this.nmJLN.Size = new System.Drawing.Size(132, 23);
+            this.nmJLN.TabIndex = 9;
             // 
             // label4
             // 
@@ -210,39 +212,39 @@
             this.label7.TabIndex = 12;
             this.label7.Text = "Provinsi";
             // 
-            // textBox4
+            // Kota
             // 
-            this.textBox4.Font = new System.Drawing.Font("Century751 No2 BT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(332, 216);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(132, 23);
-            this.textBox4.TabIndex = 13;
+            this.Kota.Font = new System.Drawing.Font("Century751 No2 BT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Kota.Location = new System.Drawing.Point(332, 216);
+            this.Kota.Name = "Kota";
+            this.Kota.Size = new System.Drawing.Size(132, 23);
+            this.Kota.TabIndex = 13;
             // 
-            // textBox5
+            // Provinsi
             // 
-            this.textBox5.Font = new System.Drawing.Font("Century751 No2 BT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(332, 252);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(132, 23);
-            this.textBox5.TabIndex = 14;
+            this.Provinsi.Font = new System.Drawing.Font("Century751 No2 BT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Provinsi.Location = new System.Drawing.Point(332, 252);
+            this.Provinsi.Name = "Provinsi";
+            this.Provinsi.Size = new System.Drawing.Size(132, 23);
+            this.Provinsi.TabIndex = 14;
             // 
-            // textBox6
+            // textBox1
             // 
-            this.textBox6.Font = new System.Drawing.Font("Century751 No2 BT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(52, 155);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(132, 23);
-            this.textBox6.TabIndex = 16;
+            this.textBox1.Font = new System.Drawing.Font("Century751 No2 BT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(52, 141);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(132, 23);
+            this.textBox1.TabIndex = 16;
             // 
-            // label8
+            // idSup
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century751 No2 BT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(55, 139);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(82, 16);
-            this.label8.TabIndex = 15;
-            this.label8.Text = "ID Supplier";
+            this.idSup.AutoSize = true;
+            this.idSup.Font = new System.Drawing.Font("Century751 No2 BT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.idSup.Location = new System.Drawing.Point(55, 125);
+            this.idSup.Name = "idSup";
+            this.idSup.Size = new System.Drawing.Size(82, 16);
+            this.idSup.TabIndex = 15;
+            this.idSup.Text = "ID Supplier";
             // 
             // frmSupplierAdd
             // 
@@ -250,18 +252,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AntiqueWhite;
             this.ClientSize = new System.Drawing.Size(526, 392);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.idSup);
+            this.Controls.Add(this.Provinsi);
+            this.Controls.Add(this.Kota);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.nmJLN);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.noTlpnSup);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.nmSup);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -288,17 +290,17 @@
         public System.Windows.Forms.Label label1;
         public System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label8;
+        public System.Windows.Forms.TextBox nmSup;
+        public System.Windows.Forms.TextBox noTlpnSup;
+        public System.Windows.Forms.TextBox nmJLN;
+        public System.Windows.Forms.TextBox Kota;
+        public System.Windows.Forms.TextBox Provinsi;
+        public System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label idSup;
     }
 }
