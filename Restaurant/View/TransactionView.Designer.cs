@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDel = new System.Windows.Forms.Button();
@@ -76,6 +76,7 @@
             this.btnUpdate.TabIndex = 73;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDel
             // 
@@ -90,6 +91,7 @@
             this.btnDel.TabIndex = 72;
             this.btnDel.Text = "Delete";
             this.btnDel.UseVisualStyleBackColor = false;
+            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
             // 
             // btnOpen
             // 
@@ -104,6 +106,7 @@
             this.btnOpen.TabIndex = 71;
             this.btnOpen.Text = "Open";
             this.btnOpen.UseVisualStyleBackColor = false;
+            this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
             // 
             // btnClear
             // 
@@ -118,6 +121,7 @@
             this.btnClear.TabIndex = 70;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnSave
             // 
@@ -132,6 +136,7 @@
             this.btnSave.TabIndex = 69;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnAdd
             // 
@@ -147,6 +152,7 @@
             this.btnAdd.Size = new System.Drawing.Size(40, 40);
             this.btnAdd.TabIndex = 61;
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click_1);
             // 
             // pictureBox1
             // 
@@ -163,10 +169,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century751 No2 BT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(58, 17);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(169, 22);
+            this.label1.Size = new System.Drawing.Size(163, 24);
             this.label1.TabIndex = 59;
             this.label1.Text = "Add Transaction";
             // 
@@ -188,14 +194,14 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvTransaction.BackgroundColor = System.Drawing.Color.AntiqueWhite;
             this.dgvTransaction.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(129)))), ((int)(((byte)(84)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century751 No2 BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(74)))), ((int)(((byte)(57)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(111)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvTransaction.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(129)))), ((int)(((byte)(84)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(74)))), ((int)(((byte)(57)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(111)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvTransaction.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvTransaction.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTransaction.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dgvTransaction.GridColor = System.Drawing.Color.AntiqueWhite;
@@ -218,10 +224,10 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century751 No2 BT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(135, 470);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(142, 16);
+            this.label4.Size = new System.Drawing.Size(151, 16);
             this.label4.TabIndex = 78;
             this.label4.Text = "Metode Pembayaran";
             // 
@@ -235,48 +241,48 @@
             // 
             // txtIdTR
             // 
-            this.txtIdTR.Font = new System.Drawing.Font("Century751 No2 BT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdTR.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdTR.Location = new System.Drawing.Point(311, 344);
             this.txtIdTR.Name = "txtIdTR";
-            this.txtIdTR.Size = new System.Drawing.Size(132, 23);
+            this.txtIdTR.Size = new System.Drawing.Size(132, 22);
             this.txtIdTR.TabIndex = 77;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century751 No2 BT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(135, 347);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(92, 16);
+            this.label8.Size = new System.Drawing.Size(95, 16);
             this.label8.TabIndex = 76;
             this.label8.Text = "ID Transaksi";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century751 No2 BT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(135, 430);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 16);
+            this.label3.Size = new System.Drawing.Size(65, 16);
             this.label3.TabIndex = 75;
             this.label3.Text = "Tanggal";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century751 No2 BT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(135, 387);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 16);
+            this.label2.Size = new System.Drawing.Size(56, 16);
             this.label2.TabIndex = 74;
             this.label2.Text = "Jumlah";
             // 
             // txtJumlah
             // 
-            this.txtJumlah.Font = new System.Drawing.Font("Century751 No2 BT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtJumlah.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtJumlah.Location = new System.Drawing.Point(311, 384);
             this.txtJumlah.Name = "txtJumlah";
-            this.txtJumlah.Size = new System.Drawing.Size(132, 23);
+            this.txtJumlah.Size = new System.Drawing.Size(132, 22);
             this.txtJumlah.TabIndex = 82;
             // 
             // TransactionView
